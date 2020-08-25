@@ -1,6 +1,6 @@
-var app = require("express");
+var express = require("express");
 var router = express.Router();
-var Burger = require("../models/burger");
+
 const burger = require("../models/burger");
 
 
@@ -20,9 +20,12 @@ router.post("/api/burgers", function (req, res) {
     });
 });
 
-// router.put("/api/burger/:id", function(req, res) {
-//     var burgerID = req.params.id;
-//     burger.update()
-// })
+router.put("/api/burgers/:id", function(req, res) {
+    console.log(req.params.id);
+    var burgerID = req.params.id;
+    burger.update(burgerID, function(result) {
+        res.json(result);
+    })
+})
 
 module.exports = router;

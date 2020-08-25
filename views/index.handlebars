@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>Eat-Da-Burger</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-3" id="available">
+            <h2>Available</h2>
+            <ol>
+                {{#each burgers}}
+                {{#if this.devoured}}
+                {{else}}
+                {{> burger-block}}
+                {{/if}}
+                {{/each}}
+            </ol>
+        </div>
+        <div class="col-md-3" id="eaten">
+            <h2>Eaten</h2>
+            <ol>
+                {{#each burgers}}
+                {{#if this.devoured}}
+                {{> eaten-block}}
+                {{/if}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <h3>Add a Burger</h3>
+    </div>
+    <div class="row justify-content-center">
+        <form class="create-form">
+
+            <div class="form-group">
+                <label for="burger">Burger Name:</label>
+                <input type="text" id="burgerName" placeholder="Enter burger name" name="name">
+            </div>
+
+            <button class="btn btn-success"type="submit">Add Burger</button>
+        </form>
+
+    </div>
+</div>

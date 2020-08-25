@@ -9,14 +9,14 @@ var orm = {
         });
     },
     insertOne: function (burgerName, cb) {
-        var query = `INSERT INTO burgers SET burger_name = ${burgerName}`;
+        var query = `INSERT INTO burgers SET burger_name = "${burgerName}"`;
         connection.query(query, function (err, result) {
             if (err) throw err;
             cb(result);
         });
     },
-    updateOne: function (burgerID, newBurger, cb) {
-        var query = `UPDATE burgers SET burger_name = ${newBurger} WHERE id= ${burgerID}`;
+    updateOne: function (burgerID, cb) {
+        var query = `UPDATE burgers SET devoured = NOT devoured WHERE id= ${burgerID}`;
         connection.query(query, function(err, result) {
             if (err) throw err;
             cb(result);

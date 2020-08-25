@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    margin: 30px;
+}
+
+#available {
+    background-color: aqua;
+    border: 2px black solid;
+    font-size: 20px;
+}
+
+#eaten {
+    background-color: blueviolet;
+    border: 2px black solid;
+    font-size: 20px;
+}
