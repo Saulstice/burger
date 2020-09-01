@@ -1,6 +1,8 @@
 # Burger Logger
 
-Eat-da-burger is a logger created with MySQL, Node, Express, Handlebars, and a custom ORM. Node and MySQL used to query and route data in the app.
+Eat-da-burger is a logger created with MySQL, Node, Express, Handlebars, and a custom ORM. Node and MySQL used to query and route data in the app. Deployed through Heroku.
+
+[Live Heroku Link:](https://blooming-reef-63317.herokuapp.com/)
 
 
 ## Usage
