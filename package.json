@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "Create a burger logger with MySQL, Node, Express, Handlebars and an ORM. Used Node and MySQL to query and route data in app, and Handlebars to generate the HTML.",
+  "description": "Created a burger logger with MySQL, Node, Express, Handlebars and an ORM. Used Node and MySQL to query and route data in app, and Handlebars to generate the HTML.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
